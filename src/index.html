@@ -17,8 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Sarina&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="font-['Poppins']">
     <!-- Header Start -->
     <header>
       <div
@@ -28,9 +34,11 @@
           <h1 class="logo font-['Sarina'] text-3xl text-[#444444]">Space</h1>
         </div>
         <nav
-          class=" flex font-bold items-center space-x-12 md:flex-col md:space-y-5 md:w-full md:space-x-0"
+          class="flex font-bold items-center space-x-12 md:flex-col md:space-y-5 md:w-full md:space-x-0"
         >
-          <ul class="flex text-xl space-x-12 items-center md:justify-center text-[#666] hover:*:text-2xl hover:*:transition-all hover:*:ease-in-out">
+          <ul
+            class="flex text-xl space-x-12 items-center md:justify-center text-[#666] hover:*:text-2xl hover:*:transition-all hover:*:ease-in-out"
+          >
             <li>Home</li>
             <li>Templates</li>
             <li>Price</li>
@@ -39,11 +47,63 @@
           <div
             class="button_small_container rounded px-[15px] py-[8px] border-2 border-[#11131E] border-opacity-20 text-center md:w-[65%] md:border-0 md:bg-[#0E6FFF]"
           >
-            <a href="#" class="text-lg text-[#0E6FFF] md:text-white">Get In Touch</a>
+            <a href="#" class="text-lg text-[#0E6FFF] md:text-white"
+              >Get In Touch</a
+            >
           </div>
         </nav>
       </div>
     </header>
     <!-- Header End -->
+    <main>
+      <!-- Hero Section Start -->
+      <section class="hero bg-[#ecffec]">
+        <div class="hero_container px-10 py-20 space-y-7">
+          <div
+            class="hero_redaction flex justify-between items-center md:flex-col space-y-5"
+          >
+            <div
+              class="hero_redaction_text_container space-y-16 max-w-[50%] md:max-w-full md:text-center"
+            >
+              <div class="hero_redaction_text_content space-y-5">
+                <h3 class="text-3xl font-semibold md:text-2xl">
+                  DESIGN INSPIRATION
+                </h3>
+                <h1 class="text-6xl font-bold md:text-4xl">
+                  Convallis turpis erat tempus, viverra aliquet.
+                </h1>
+              </div>
+              <button
+                class="text-white bg-[#0E6FFF] font-bold text-3xl px-7 py-5 rounded-md md:text-xl md:py-3"
+              >
+                Get In Touch
+              </button>
+            </div>
+            <div class="hero_redaction_image bg-green-500">
+              <img src="img/jumbotron.jpg" alt="" class="w-[550px]" />
+            </div>
+          </div>
+          <div class="hero_review text-lg md:flex md:flex-col md:items-center md:space-y-5">
+            <p class="font-semibold">
+              I feel so much less stressed ❤️ as I now know by the book.”
+            </p>
+            <div class="hero_review_card flex space-x-3">
+              <div class="hero_review_card_image_container">
+                <img
+                  src="img/user_review.png"
+                  alt=""
+                  class="w-16 rounded-full"
+                />
+              </div>
+              <div class="hero_review_card_text">
+                <h1 class="font-bold text-xl">Prima Putra</h1>
+                <p>CEO of Whatever</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+    </main>
   </body>
 </html>
