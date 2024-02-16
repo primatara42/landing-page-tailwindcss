@@ -544,12 +544,21 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
 
 .w-16 {
   width: 4rem;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .w-\[30\%\] {
@@ -580,12 +589,21 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .gap-x-3 {
@@ -880,12 +898,20 @@ video {
     flex-direction: column;
   }
 
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:items-center {
     align-items: center;
   }
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:gap-y-10 {
+    row-gap: 2.5rem;
   }
 
   .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
